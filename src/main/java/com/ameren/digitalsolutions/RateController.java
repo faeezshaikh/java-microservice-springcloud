@@ -1,4 +1,4 @@
-package pluralsight.demo;
+package com.ameren.digitalsolutions;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
