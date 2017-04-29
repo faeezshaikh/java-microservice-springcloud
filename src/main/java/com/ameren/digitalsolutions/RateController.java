@@ -10,25 +10,25 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class RateController {
 	
-	@Value("${rate}")
-	String rate;
+	@Value("${message}")
+	String message;
 	
-	@Value("${lanecount}")
-	String lanecount;
+	@Value("${esrt}")
+	String esrt;
 	
-	@Value("${tollstart}")
-	String tollstart;
+	@Value("${outageStart}")
+	String outageStart;
 	
-	@Value("${connstring}")
-	String connstring;
+	@Value("${rds}")
+	String rds;
 
 	@RequestMapping("/rate")
 	public String getRate(Model m) {
 
-		m.addAttribute("rateamount", rate);
-		m.addAttribute("lanes", lanecount);
-		m.addAttribute("tollstart", tollstart);
-		m.addAttribute("connstring", connstring);
+		m.addAttribute("message", message);
+		m.addAttribute("esrt", esrt);
+		m.addAttribute("outageStart", outageStart);
+		m.addAttribute("rds", rds);
 				
 		//name of view
 		return "rateview";

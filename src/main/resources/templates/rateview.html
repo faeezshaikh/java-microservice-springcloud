@@ -12,7 +12,10 @@
 	<div class="col-md-8">
 		<h1>Welcome to Ameren Outage Center</h1>
 		<h3>A Quick n Dirty Front-end for the Spring Cloud Microservice </h3>
-	    <p th:text="'Your rate is: ' + ${rateamount} + ', number of lanes is ' + ${lanes} + ', toll start time is ' + ${tollstart} + ' and encrypted value is '+ ${connstring} +'!'" />
+	    <p th:text="'Message: ' + ${message}  "/>
+	    <p th:text="'Outage Start Time' + ${outageStart}" />
+	    <p th:text="'ESRT' + ${esrt} " />
+	    <p th:text="'RDS Instance' + ${rds}" />
 	</div>
     <div class="col-md-2"></div>
 </div>    
